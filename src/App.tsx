@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { ComponentTopNavbar,ComponentCategories,ComponentNavbar,ComponentAd, Trends } from './components/index';
+import { ComponentTopNavbar,ComponentCategories,ComponentNavbar,ComponentAd, Trends,ComponentFlashSales,ComponentMustTrends } from './components/index';
 import { TagPopup } from './components/ComponentAd/SubComponents';
 
 function App() {
@@ -11,6 +11,8 @@ function App() {
      <ComponentNavbar/>
      <ComponentAd/>
      <Trends/>
+     <ComponentFlashSales/>
+     <ComponentMustTrends/>
     </div>
   );
 }
