@@ -5,3 +5,7 @@ export {default as ComponentAd} from './ComponentAd/ComponentAd'
 export {default as Trends} from './ComponentCard/SubComponent/Trends'
 export {default as ComponentFlashSales} from "./ComponetFlashSales/ComponentFlashSales"
 export {default as ComponentMustTrends} from "./ComponentMustTrends/ComponentMustTrends"
+export {default as ComponentTopTrends} from './ComponentTopTrends/ComponentTopTrends'
+export {default as ComponentBanner} from "./ComponentBanner/ComponentBanner"
+export {default as ComponentBigTrends} from "./ComponentBigTrends/ComponentBigTrends"
+export {default as ComponentBigSecTrends} from "./ComponentBigTrends/ComponentBigSecTrends"

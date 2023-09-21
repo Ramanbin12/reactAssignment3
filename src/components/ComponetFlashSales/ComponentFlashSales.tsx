@@ -7,7 +7,7 @@ const ComponentFlashSales = () => {
   const flashData = useAppSelector((state) => state.flashsale.flashSale)
   console.log(flashData)
   return (
-    <div className='px-10 py-10'>
+    <div className='px-10 py-10 '>
     <p className='text-4xl font-lato px-3 '>Flash Sales</p>
     <div className=' flex custom-scrollbar overflow-x-auto gap-5 p-5'>
       {

@@ -3,7 +3,7 @@ import { trendsData } from '../../../utilities/trendsData'
 import Card from "./Card"
 const Trends = () => {
     return (
-        <div className='md:hidden flex flex-col gap-5 '>
+        <div className='flex md:hidden flex-col gap-5 '>
 
             {
                 trendsData.map((item) => {

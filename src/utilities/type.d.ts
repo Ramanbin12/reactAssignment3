@@ -19,6 +19,15 @@ export type flashSalesType={
         seconds:string,
     image:string
 }
+export interface trendsTypes{
+    id:number,
+    title:string,
+    desc:string,
+    color:string,
+    img:string,
+    images:string,
+
+}
 // export interface TimeType{
 //     Time:{
 //     hours:number,

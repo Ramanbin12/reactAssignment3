@@ -23,6 +23,7 @@ export const TrendsMustHaves=[
         title:"Cool & Sexy Calvin Klein",
         desc:"Dotted dress-Casual",
         price:89
-    }
+    },
+   
 
 ]
