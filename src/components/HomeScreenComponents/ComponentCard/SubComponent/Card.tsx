@@ -1,5 +1,5 @@
 import React from 'react'
-import { trendType } from '../../../utilities/type'
+import { trendType } from '../../../../utilities/type'
 const Reddress:React.FC<trendType> = ({title,desc,color,img}) => {
   return (
     <div className={"flex w-full justify-between text-white"}>

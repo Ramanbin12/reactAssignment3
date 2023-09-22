@@ -1,8 +1,8 @@
 import React from 'react'
 import Rating from './subComponents/Rating'
-import { useAppSelector } from '../../hooks'
-import { flashSalesType } from '../../utilities/type'
-import "../../common/style.css"
+import { useAppSelector } from '../../../hooks'
+import { flashSalesType } from '../../../utilities/type'
+import "../../../common/style.css"
 const ComponentFlashSales = () => {
   const flashData = useAppSelector((state) => state.flashsale.flashSale)
   console.log(flashData)

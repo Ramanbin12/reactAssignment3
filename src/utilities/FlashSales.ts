@@ -1,4 +1,4 @@
-import {goldenbag,pinkbag,shoe,sketchers} from '../components/ComponetFlashSales/assests'
+import {goldenbag,pinkbag,shoe,sketchers} from '../components/HomeScreenComponents/ComponetFlashSales/assests'
 export const flashSalesData=[
     {
         id:1,

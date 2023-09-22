@@ -1,4 +1,4 @@
-import { largepic1,largepic2,largepic3,smallpic1,smallpic2,smallpic3 } from "../components/ComponentMustTrends/assests";
+import { largepic1,largepic2,largepic3,smallpic1,smallpic2,smallpic3 } from "../components/HomeScreenComponents/ComponentMustTrends/assests";
 export const TrendsMustHaves=[
     {
         id:1,

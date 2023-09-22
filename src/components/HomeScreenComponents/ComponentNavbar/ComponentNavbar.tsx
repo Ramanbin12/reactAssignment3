@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 const ComponentNavbar = () => {
   return (
     <div className='hidden lg:flex place-self-center list-none text-sm lg:text-base  w-full justify-between px-[10px] py-[16px] '>
@@ -10,7 +10,7 @@ const ComponentNavbar = () => {
       <li>Super market</li>
       <li>Cosmetics</li>
       <li>Shoe & Bag</li>
-      <li>Electronic</li>
+      <li><NavLink to='electronics'>Electronic</NavLink></li>
       <li>Sport & Outdoor</li>
       <li>Best seller</li>
 

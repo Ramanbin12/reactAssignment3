@@ -1,5 +1,5 @@
 import React from 'react'
-import { trendsData } from '../../../utilities/trendsData'
+import { trendsData } from '../../../../utilities/trendsData'
 import Card from "./Card"
 const Trends = () => {
     return (

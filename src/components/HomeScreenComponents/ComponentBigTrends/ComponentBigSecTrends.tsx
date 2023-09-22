@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from "./subcomponents/Card"
-import { bigtrend2} from "../../utilities/BigTrends"
+import { bigtrend2} from "../../../utilities/BigTrends"
 const ComponentBigSecTrends = () => {
   return (
     <div className='hidden md:flex p-11 justify-between gap-5'>

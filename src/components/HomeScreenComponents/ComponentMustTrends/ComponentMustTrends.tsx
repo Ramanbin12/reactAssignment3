@@ -1,5 +1,5 @@
 import React from 'react'
-import { TrendsMustHaves } from '../../utilities/TrendsMustHaves'
+import { TrendsMustHaves } from '../../../utilities/TrendsMustHaves'
 const ComponentMustTrends = () => {
     return (
         <>

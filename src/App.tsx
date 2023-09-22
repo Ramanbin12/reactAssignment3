@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import {HomeScreen} from "./screens/index"
+import ComponentRoute from "./routes/ComponentRoute"
 function App() {
   return (
     <div className="App vorder-4">
-    <HomeScreen/>
+    <ComponentRoute/>
     </div>
   );
 }

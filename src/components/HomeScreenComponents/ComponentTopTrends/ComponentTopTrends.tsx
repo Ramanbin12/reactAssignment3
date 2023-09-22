@@ -1,7 +1,7 @@
 import React from 'react'
-import {Top} from "../../utilities/Top"
+import {Top} from "../../../utilities/Top"
 import Rating from './Subcomponents/Rating'
-import "../../common/style.css"
+import "../../../common/style.css"
 const ComponentTopTrends = () => {
   return (
     <>

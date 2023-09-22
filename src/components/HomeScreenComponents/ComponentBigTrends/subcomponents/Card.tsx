@@ -1,5 +1,5 @@
 import React from 'react'
-import { trendsTypes } from '../../../utilities/type'
+import { trendsTypes } from '../../../../utilities/type'
 
 const Card: React.FC<trendsTypes> = ({ img, title, desc, color,images }) => {
     return (
