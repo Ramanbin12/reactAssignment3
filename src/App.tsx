@@ -1,21 +1,10 @@
 import React from 'react';
 import './App.css';
-import { ComponentTopNavbar,ComponentCategories,ComponentNavbar,ComponentAd, Trends,ComponentFlashSales,ComponentMustTrends,ComponentBigTrends,ComponentTopTrends,ComponentBanner,ComponentBigSecTrends} from './components/index';
-
+import {HomeScreen} from "./screens/index"
 function App() {
   return (
     <div className="App vorder-4">
-     <ComponentTopNavbar/>
-     <ComponentCategories/>
-     <ComponentNavbar/>
-     <ComponentAd/>
-     <Trends/>
-     <ComponentFlashSales/>
-     <ComponentMustTrends/>
-     <ComponentTopTrends/>
-     <ComponentBigTrends/>
-     <ComponentBanner/>
-     <ComponentBigSecTrends/>
+    <HomeScreen/>
     </div>
   );
 }

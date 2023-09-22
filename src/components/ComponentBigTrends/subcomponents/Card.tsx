@@ -13,7 +13,7 @@ const Card: React.FC<trendsTypes> = ({ img, title, desc, color,images }) => {
                 </div>
             </div>
             <img className=' hidden lg:flex min-w-[200px]' src={img} alt="" />
-            <img className='hidden lg:hidden md:flex min-w-[150px]' src={images}/>
+            <img className='hidden lg:hidden md:flex min-w-[120px]' src={images}/>
         </div>
     )
 }

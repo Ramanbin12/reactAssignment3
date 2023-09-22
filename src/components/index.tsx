@@ -9,3 +9,4 @@ export {default as ComponentTopTrends} from './ComponentTopTrends/ComponentTopTr
 export {default as ComponentBanner} from "./ComponentBanner/ComponentBanner"
 export {default as ComponentBigTrends} from "./ComponentBigTrends/ComponentBigTrends"
 export {default as ComponentBigSecTrends} from "./ComponentBigTrends/ComponentBigSecTrends"
+export {default as ComponentFooter} from "./ComponentFooter/ComponentFooter"
