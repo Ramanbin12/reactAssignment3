@@ -1,4 +1,4 @@
-import {red,blue} from '../components/HomeScreenComponents/ComponentCard/assets'
+import {red,blue} from '../components/HomePageComponents/ComponentCard/assets'
 export const trendsData=[
     {
         id:1,

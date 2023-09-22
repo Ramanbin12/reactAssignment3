@@ -1,4 +1,4 @@
-import {trend1,trend2,trend3,trend4,tabtrend1,tabtrend2,tabtrend3,tabtrend4} from "../components/HomeScreenComponents/ComponentBigTrends/assests"
+import {trend1,trend2,trend3,trend4,tabtrend1,tabtrend2,tabtrend3,tabtrend4} from "../components/HomePageComponents/ComponentBigTrends/assests"
 export const bigTrends1=[
     {
         id:1,

@@ -1,5 +1,6 @@
 import React from 'react'
-import { ComponentTopNavbar,ComponentCategories,ComponentNavbar,ComponentAd, Trends,ComponentFlashSales,ComponentMustTrends,ComponentBigTrends,ComponentTopTrends,ComponentBanner,ComponentBigSecTrends,ComponentFooter} from '../../components/index';
+import { ComponentCategories,ComponentAd, Trends,ComponentFlashSales,ComponentMustTrends,ComponentBigTrends,ComponentTopTrends,ComponentBanner,ComponentBigSecTrends} from '../../components/index';
+import { ComponentTopNavbar,ComponentFooter,ComponentNavbar,Componentbanner }  from '../../common';
 
 const HomeScreen = () => {
   return (

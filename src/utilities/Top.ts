@@ -1,4 +1,4 @@
-import {photo,photo1,photo2,photo3} from '../components/HomeScreenComponents/ComponentTopTrends/assets'
+import {photo,photo1,photo2,photo3} from '../components/HomePageComponents/ComponentTopTrends/assets'
 export const Top=[
     {
         id:1,
