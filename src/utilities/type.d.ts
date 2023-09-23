@@ -35,3 +35,15 @@ export interface trendsTypes{
 //     seconds:number,
 // }
 // }
+
+export type colorType={
+        id:number,
+        color:string,
+        checked:boolean
+}
+export type sizeType={
+
+        id:number,
+        title:string,
+        clicked:boolean,
+}

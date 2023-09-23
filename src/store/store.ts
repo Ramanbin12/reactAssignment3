@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import flashSale from "../slices/flashSale";
+import ColorPickerSlice from "../slices/ColorPickerSlice";
 export const store=configureStore({
     reducer:{
-        flashsale:flashSale
+        colorpicker:ColorPickerSlice
     }
 })
