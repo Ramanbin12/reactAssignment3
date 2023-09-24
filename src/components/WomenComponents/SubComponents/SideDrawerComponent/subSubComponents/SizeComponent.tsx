@@ -1,15 +1,15 @@
 import React from 'react'
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
 // import {Size} from "../../../utilities/Size"
-import { useAppDispatch, useAppSelector } from '../../../hooks'
-import { sizeType } from '../../../utilities/type'
-import { toggleSize } from "../../../slices/ColorPickerSlice"
+import { useAppDispatch, useAppSelector } from '../../../../../hooks'
+import { sizeType } from '../../../../../utilities/type'
+import { toggleSize } from "../../../../../slices/ColorPickerSlice"
 const SizeComponent = () => {
     const dispatch = useAppDispatch();
     const size = useAppSelector((state) => state.colorpicker)
 
     return (
-        <div className='space-y-3' >
+        <div className='space-y-4' >
             <p className='text-lg font-semibold font-lato'> SIZE</p>
             <div className='grid grid-rows-2 grid-cols-4 gap-4'>
                 {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Checkbox,FormGroup,FormControlLabel } from '@mui/material'
 const StyleComponent = () => {
   return (
-    <div>
+    <div className='space-y-5'>
         <p className='text-lg font-semibold font-lato'> STYLE</p>
       <FormGroup>
   <FormControlLabel control={<Checkbox defaultChecked />} label="Casual" />

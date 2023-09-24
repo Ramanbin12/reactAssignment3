@@ -47,3 +47,15 @@ export type sizeType={
         title:string,
         clicked:boolean,
 }
+export type clothesType={
+
+        id:number,
+        title:string,
+        desc:string,
+        updatedprice:number,
+        price:number,
+        discount:number,
+        image:string,
+        fav:boolean,
+ 
+}
