@@ -7,7 +7,7 @@ const ContentComponent = () => {
   console.log("c",clothes)
   console.log("dress",clothes.dress)
   return (
-    <div className='grid  lg:grid-rows-3 lg:grid-cols-3 justify-items-center w-[80%]'>
+    <div className=' flex flex-wrap xl:grid xl:grid-rows-3 xl:grid-cols-3 justify-items-center w-[80%]'>
       {
         clothes.dress.map((item:clothesType) => {
           return (
