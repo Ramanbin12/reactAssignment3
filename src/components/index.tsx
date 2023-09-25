@@ -7,3 +7,4 @@ export {default as ComponentTopTrends} from './HomePageComponents/ComponentTopTr
 export {default as ComponentBanner} from "./HomePageComponents/ComponentBanner/ComponentBanner"
 export {default as ComponentBigTrends} from "./HomePageComponents/ComponentBigTrends/ComponentBigTrends"
 export {default as ComponentBigSecTrends} from "./HomePageComponents/ComponentBigTrends/ComponentBigSecTrends"
+export {default as DetailedBrandCoponent} from './DetailedBrandComponent/DetailedBrandComponent'
