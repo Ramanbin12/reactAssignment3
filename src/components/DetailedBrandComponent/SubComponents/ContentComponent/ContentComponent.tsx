@@ -5,12 +5,21 @@ import { ToggleButton } from '@mui/material'
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import { cart } from "../../assests"
+import { useAppDispatch,useAppSelector } from '../../../../hooks'
+import { ProductdetailType } from '../../../../utilities/type';
+import { useDispatch } from 'react-redux';
+import { increment,decrement } from '../../../../slices/ProductPageSlice';
+
 const ContentComponent = () => {
-    const [value, setValue] = useState(1);
+    // const [value, setValue] = useState(1);
+    const ProductDetail=useAppSelector((state)=>state.product.product);
+    const addcart=useAppSelector((state)=>state.product.cart)
+    console.log("addcart",addcart);
+    const dispatch=useDispatch()
     return (
         <div className=' md:w-full lg:w-[50%] border-red-600 flex justify-center items-center '>
             {
-                ProductDetail.map((item) => {
+                ProductDetail.map((item:ProductdetailType) => {
                     return (<div className='flex  flex-col gap-7  p-5'>
                         <div className='flex flex-col gap-3'>
                             <p className='text-4xl font-lato font-semibold'>{item.title}</p>
@@ -60,9 +69,9 @@ const ContentComponent = () => {
                         <div className='flex gap-5 sm:gap-10 md:gap-16'>
                             <p>Quantity</p>
                             <div className='flex border-2 gap-2'>
-                                <button className=' p-1'><RemoveIcon /></button>
-                                <p className='place-self-center'>2</p>
-                                <button className=' p-1'><AddIcon /></button>
+                                <button className=' p-1' onClick={()=>dispatch(decrement(item.id))}><RemoveIcon /></button>
+                                <p className='place-self-center'>{item.quantity}</p>
+                                <button className=' p-1' onClick={()=>dispatch(increment(item.id))}><AddIcon /></button>
 
                             </div>
                         </div>
@@ -73,10 +82,11 @@ const ContentComponent = () => {
                         </div>
                         <div className='flex gap-2'>
 
-                            <button className='px-[32px]  w-[45%] py-[16px]  border-md text-white bg-[#4172DC]  flex justify-center items-center whitespace-nowrap '>SHOP NOW</button>
-                            <div className='flex px-[32px] w-[45%] py-[16px] gap-3 justify-center  items-center border-2 '>
+                            <button className='px-[32px]  w-[45%] py-[16px]  border-md text-white bg-[#4172DC]  flex justify-center items-center whitespace-nowrap ' 
+                            >SHOP NOW</button>
+                            <div className='flex px-[32px] w-[45%] py-[16px] gap-3 justify-center  items-center border-2 ' >
                                 <img src={cart} alt="" />
-                                <p className='whitespace-nowrap'>ADD TO BASKET</p>
+                                <p className='whitespace-nowrap' >ADD TO BASKET</p>
                             </div>
 
                         </div>

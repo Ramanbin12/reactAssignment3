@@ -5,6 +5,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { useAppDispatch,useAppSelector } from '../../../../../hooks';
 import { toggleFav } from '../../../../../slices/ClothesSlice';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import {addToCart} from "../../../../../slices/ClothesSlice"
 const Cards = ({id,image,title,desc,updatedprice,price,discount,fav}:clothesType) => {
   const [value, setValue] = React.useState<number | null>(4);
    const dispatch=useAppDispatch();
@@ -35,10 +37,16 @@ const Cards = ({id,image,title,desc,updatedprice,price,discount,fav}:clothesType
           setValue(newValue);
         }}
       />
-        <div className='flex gap-3'>
+      <div className='flex w-full justify-between'>
+        <div className='flex gap-3 '>
             <p className='text-red-500 font-medium'>${updatedprice}</p>
             <p className='line-through text-sm place-self-center text-[#555555]'>${price}</p>
             <p className='text-red-400'>-{discount}%</p>
+            </div>
+            <div className='flex items-center'>
+            <ShoppingCartIcon onClick={()=>dispatch(addToCart(id))} />
+            </div>
+            
             </div>
         </div>
     </div>
