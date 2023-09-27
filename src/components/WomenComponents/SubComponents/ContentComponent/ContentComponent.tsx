@@ -19,6 +19,7 @@ const ContentComponent = () => {
           discount = { item.discount }
           image = { item.image }
           fav = { item.fav }
+          quantity={item.quantity}
             />
             )
       })

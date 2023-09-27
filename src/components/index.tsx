@@ -8,3 +8,4 @@ export {default as ComponentBanner} from "./HomePageComponents/ComponentBanner/C
 export {default as ComponentBigTrends} from "./HomePageComponents/ComponentBigTrends/ComponentBigTrends"
 export {default as ComponentBigSecTrends} from "./HomePageComponents/ComponentBigTrends/ComponentBigSecTrends"
 export {default as DetailedBrandCoponent} from './DetailedBrandComponent/DetailedBrandComponent'
+export {default as CheckoutComponent} from "./CheckoutComponent/CheckoutComponent"

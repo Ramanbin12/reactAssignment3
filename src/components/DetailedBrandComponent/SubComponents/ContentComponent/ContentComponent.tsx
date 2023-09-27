@@ -8,7 +8,6 @@ import { cart } from "../../assests"
 import { useAppDispatch,useAppSelector } from '../../../../hooks'
 import { ProductdetailType } from '../../../../utilities/type';
 import { useDispatch } from 'react-redux';
-import { increment,decrement } from '../../../../slices/ProductPageSlice';
 
 const ContentComponent = () => {
     // const [value, setValue] = useState(1);
@@ -69,9 +68,9 @@ const ContentComponent = () => {
                         <div className='flex gap-5 sm:gap-10 md:gap-16'>
                             <p>Quantity</p>
                             <div className='flex border-2 gap-2'>
-                                <button className=' p-1' onClick={()=>dispatch(decrement(item.id))}><RemoveIcon /></button>
-                                <p className='place-self-center'>{item.quantity}</p>
-                                <button className=' p-1' onClick={()=>dispatch(increment(item.id))}><AddIcon /></button>
+                                <button className=' p-1' ><RemoveIcon /></button>
+                                <p className='place-self-center'>{2}</p>
+                                <button className=' p-1' ><AddIcon /></button>
 
                             </div>
                         </div>

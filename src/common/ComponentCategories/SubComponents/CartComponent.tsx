@@ -5,11 +5,12 @@ import { Card1 } from '../assests'
 import { removeFromCart } from "../../../slices/ClothesSlice"
 import { ToggleButton } from '@mui/material'
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
-
+import { useNavigate } from 'react-router-dom'
 const CartComponent = () => {
   const cart = useAppSelector((state) => state.clothes.cart)
   let total = 0;
   const dispatch = useAppDispatch()
+  const navigate=useNavigate()
   return (
 
     <div>
@@ -63,7 +64,7 @@ const CartComponent = () => {
               <div className='text-black w-full flex justify-between bg-white'><p>Total</p>
                 <p className='font-semibold font-lato'>${total}</p></div>
               <div className='flex text-black w-full bg-white justify-evenly'>
-                <button className=' w-[100px] py-3 rounded-md  bg-[#4172DC] text-white'>View Bag</button>
+                <button className=' w-[100px] py-3 rounded-md  bg-[#4172DC] text-white' onClick={()=>navigate("/checkout")}>View Bag</button>
                 <button className='w-[100px] py-rounded-md  border-2'>Checkout</button>
 
               </div>
