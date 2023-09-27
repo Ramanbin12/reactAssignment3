@@ -9,7 +9,10 @@ export const WomenClothes=[
         discount:10,
         image:photo,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+
 
     },
     {
@@ -21,7 +24,9 @@ export const WomenClothes=[
         discount:8,
         image:photo1,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
 
     },
     {
@@ -33,7 +38,9 @@ export const WomenClothes=[
         discount:15,
         image:photo3,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
 
     },
     {
@@ -45,7 +52,9 @@ export const WomenClothes=[
         discount:8,
         image:photo4,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
 
     },
     {
@@ -57,7 +66,9 @@ export const WomenClothes=[
         discount:15,
         image:photo5,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
     },
     {
         id:6,
@@ -68,7 +79,9 @@ export const WomenClothes=[
         discount:20,
         image:photo6,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
 
     },
     {
@@ -80,7 +93,9 @@ export const WomenClothes=[
         discount:11,
         image:photo7,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
 
     },
     {
@@ -92,7 +107,9 @@ export const WomenClothes=[
         discount:3,
         image:photo8,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
 
     },
     {
@@ -104,7 +121,9 @@ export const WomenClothes=[
         discount:10,
         image:photo9,
         fav:false,
-        quantity:1
+        quantity:1,
+        size:["XS","S","M","L","XL"],
+        color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
 
     },
     

@@ -57,7 +57,9 @@ export type clothesType = {
     discount: number,
     image: string,
     fav: boolean,
-    quantity:number
+    quantity:number,
+    size?:string[],
+        color?:string[],
 
 }
 export interface ProductdetailType {

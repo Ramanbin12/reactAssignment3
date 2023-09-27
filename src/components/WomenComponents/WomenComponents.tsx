@@ -6,7 +6,7 @@ import FilterComponent from './SubComponents/SideDrawerComponent/subSubComponent
 import { ComponentFooter } from '../../common'
 const WomenComponents = () => {
   return (
-    <div className='flex flex-col gap-10'>
+    <div className='flex flex-col gap-3'>
       <Header/>
       <FilterComponent/>
 
@@ -15,7 +15,9 @@ const WomenComponents = () => {
 
       <ContentComponent/>
       </div>
+      <div className='mt-10'>
       <ComponentFooter/>
+      </div>
     </div>
   )
 }
