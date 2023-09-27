@@ -4,16 +4,28 @@ import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { useAppDispatch,useAppSelector } from '../../../hooks';
+import { clothesType } from '../../../utilities/type';
 const OrderSummary = () => {
+  const cart= useAppSelector((state)=>state.clothes.cart)
+  let ppi=1;
+  let total=0;
+  cart.map((item:clothesType)=>{
+ppi=item.price*item.quantity
+total=ppi+total
+return total
+  })
+  
   return (
+    
     <div className=' w-full lg:w-1/3 '> 
       <div className='flex flex-col md:items-center'>
-        <div className='flex flex-col gap-4 bg-[#E9E9E9]  p-5'>
+        <div className='flex flex-col gap-4 h-auto bg-[#E9E9E9]  p-5'>
           <p className='font-lato text-lg font-semibold'>Order Summary</p>
           <div className='flex w-full justify-between flex-col'>
           <div className='text-[#555555] list-none flex justify-between '>
             <li>Price</li>
-            <span>$99.23</span>
+            <span>${total}</span>
             </div>
             <div className='text-[#555555] list-none flex justify-between '>
             <li>Shipping</li>
@@ -40,7 +52,7 @@ const OrderSummary = () => {
           </div>
           <div className='flex  justify-between'>
             <p>Total Price</p>
-            <p >$110.13</p>
+            <p >${total +10}</p>
           </div>
           <div className='border-2 p-3 gap-2 rounded-md bg-[#434343] text-white flex justify-center'>
             <ShoppingCartCheckoutIcon/>

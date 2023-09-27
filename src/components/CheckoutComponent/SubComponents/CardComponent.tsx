@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAppDispatch, useAppSelector } from '../../../hooks'
-import { increment, decrement } from '../../../slices/ClothesSlice';
+import { increment, decrement, removeFromCart } from '../../../slices/ClothesSlice';
 import DeleteIcon from '@mui/icons-material/Delete';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { clothesType } from "../../../utilities/type"
@@ -31,8 +31,8 @@ const CardComponent = () => {
                                         <button className=' p-1' onClick={() => dispatch(increment(item.id))}><AddIcon /></button>
 
                                     </div>
-                                    <p>${item.price}</p>
-                                    <DeleteIcon />
+                                    <p>${item.price*item.quantity}</p>
+                                    <DeleteIcon onClick={()=>dispatch(removeFromCart(item.id))} />
                             </div>
 
                         </div>
