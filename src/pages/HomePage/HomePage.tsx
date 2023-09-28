@@ -17,7 +17,7 @@ const HomeScreen = () => {
      <ComponentBigTrends/>
      <ComponentBanner/>
      <ComponentBigSecTrends/>
-     <ComponentFooter/>
+     <ComponentFooter />
     </div>
   )
 }

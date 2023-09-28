@@ -1,11 +1,13 @@
 import React from 'react'
 import Componentbanner from './Subcomponent/Componentbanner'
+import ComponentLowerFooter from '../ComponentLowerFooter/ComponentLowerFooter'
 
 const ComponentFooter = () => {
     return (
         <div className='relative mt-20  '>
-        <Componentbanner/>
-        <div className='bg-[#D1E2EB]  w-full mt-40 p-5'>
+            
+        <Componentbanner />
+        <div className='bg-[#D1E2EB]  w-full mt-20 p-5'>
             <div className='grid grid-rows-2   grid-cols-2  gap-4 lg:grid-rows-1 lg:grid-cols-4 pt-40 px-5 md:px-10 lg:px-40   '>
                 <div className='flex flex-col gap-2 '>
                     <p className='text-lg font-medium '>Company</p>
@@ -44,7 +46,7 @@ const ComponentFooter = () => {
                 </div>
             </div>
         </div>
-
+<ComponentLowerFooter/>
 </div>    )
 
 }

@@ -9,7 +9,7 @@ const ProductPage = () => {
      
       <ProductComponent />
     
-        <ComponentFooter />
+        <ComponentFooter/>
     </div>
   )
 }

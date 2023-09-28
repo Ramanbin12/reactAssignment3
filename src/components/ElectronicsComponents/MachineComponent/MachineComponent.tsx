@@ -4,7 +4,7 @@ import Rating from './SubComponents/Rating'
 import {left,right} from "./assests"
 const MachineComponent = () => {
   return (
-    <div className=' hidden md:flex bg-[#D9D9D9] justify-items-center justify-center    p-5'>
+    <div className=' hidden md:flex bg-[#D9D9D9] justify-items-center justify-center mb-[30px]  p-5'>
         <div className='flex justify-items-center'>
         <img className=' place-self-center ' src={left}  alt=""/>
         </div>
