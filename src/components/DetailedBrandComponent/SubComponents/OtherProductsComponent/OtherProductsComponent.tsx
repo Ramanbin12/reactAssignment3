@@ -4,9 +4,9 @@ import { useAppDispatch} from '../../../../hooks'
 const OtherProductsComponent = () => {
   const dispatch=useAppDispatch()
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col space-y-5 py-8 gap-4'>
       <p className='text-xl font-lato font-medium' >YOU MIGHT ALSO LIKE</p>
-      <div className='grid grid-rows-auto md:grid-cols-2 xl:grid-cols-4' >
+      <div className='grid grid-rows-auto  md:grid-cols-2 xl:grid-cols-4' >
         {
             OtherProducts.map((item)=>{
                 return(
