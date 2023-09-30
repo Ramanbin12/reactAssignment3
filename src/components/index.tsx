@@ -10,3 +10,4 @@ export {default as ComponentBigSecTrends} from "./HomePageComponents/ComponentBi
 export {default as DetailedBrandCoponent} from './DetailedBrandComponent/DetailedBrandComponent'
 export {default as CheckoutComponent} from "./CheckoutComponent/CheckoutComponent"
 export {default as ProductComponent} from "./ProductComponent/ProductComponent"
+export {default as ComponentInformation} from "./ComponentInformation/ComponentInformation"
