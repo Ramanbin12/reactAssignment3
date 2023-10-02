@@ -8,6 +8,8 @@ import OrderSummary from '../CheckoutComponent/OrderSummary';
 import ComponentDetails from '../ComponentInformation/ComponentDetails';
 import { OtherProductsComponent } from '../DetailedBrandComponent/SubComponents';
 import {ConfirmationComponent, PaymentComponent} from "../index"
+import "../../common/style.css"
+
 const ComponentForm = () => {
     const [value, setValue] = React.useState('1');
 
@@ -16,10 +18,10 @@ const ComponentForm = () => {
     };
   
   return (
-    <div className='space-y-5 m-5'>
+    <div className='space-y-5   md:m-5'>
         <TabContext value={value}>
-            <div className='flex  justify-center'>
-          <TabList style={{display:'flex', gap:'20px'}} onChange={handleChange} aria-label="lab API tabs example">
+            <div className='flex justify-center'>
+          <TabList style={{display:'flex'}} onChange={handleChange} aria-label="lab API tabs example">
             <Tab label="CARD(1)" value="1" />
             <Tab label="CUSTOMER INFO" value="2" />
             <Tab label="SHIPPING & PAYMENT" value="3" />

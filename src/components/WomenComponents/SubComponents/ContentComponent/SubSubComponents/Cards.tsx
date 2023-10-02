@@ -17,7 +17,7 @@ const Cards = ({id,image,title,desc,updatedprice,price,discount,fav}:clothesType
     // <div className='border-2 flex flex-col justify-between min-w-[250px] rounded-lg leading-10 mt-5 ' key={id}>
     <div className='border-2 rounded-lg flex flex-col justify-between  w-[350px] first-line:rounded-lg leading-10 mt-5 ' key={id} onClick={()=>navigate(`/women/clothes/${id}`)}>
 
-    <img className="w-[350px] md:h-[350px] lg:h-[auto]" src={image} alt=""/>
+    <img className="min-w-[350px] md:h-[350px] lg:h-[auto]" src={image} alt=""/>
     <div className='p-[10px]'>
       <div className='flex justify-between'>
         <div>

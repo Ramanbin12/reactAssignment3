@@ -14,6 +14,7 @@ const ConfirmationComponent = () => {
   return (
     <div className='w-full space-y-5'>
       <p className='text-xl font-lato font-semibold'>Confirmation</p>
+      {data.length===0 ||paymentMode.length===0||shippingBrand===0?<div>Please fill all the details to proceed</div>:
       <div className=' bg-[#F5F5F5] p-5'>
         <div className=' space-y-5' >
           <p className='text-[#555555]'>Shopping items</p>
@@ -79,6 +80,7 @@ const ConfirmationComponent = () => {
     </div>
         </div>
       </div>
+}
     </div>
   )
 

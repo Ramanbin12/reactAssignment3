@@ -16,7 +16,7 @@ const CardComponent = () => {
     return (
         <div className='w-full  lg:p-5'>
             {
-            cart.length===0?<div className='border-2 flex flex-col items-center justify-center'>
+            cart.length===0?<div className=' flex flex-col items-center justify-center'>
                 <img src={emptycart} alt="" className='w-[500px]' />
                 <button className='border-2 p-4 rounded-md bg-blue-400 'onClick={()=>navigate('/women/clothes')}>continue shopping</button>
                 </div>:

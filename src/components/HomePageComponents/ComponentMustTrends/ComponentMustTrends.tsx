@@ -3,7 +3,7 @@ import { TrendsMustHaves } from '../../../utilities/TrendsMustHaves'
 const ComponentMustTrends = () => {
     return (
         <>
-        <div className='px-11'>
+        <div className='md:px-11'>
         <p className='text-4xl font-lato'>Trending must-haves</p>
 
         <div className='flex gap-3 custom-scrollbar lg:flex-nowrap overflow-x-auto md:flex-wrap '>
