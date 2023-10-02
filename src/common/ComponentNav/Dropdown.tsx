@@ -3,7 +3,7 @@ import ladygaga from './ladygaga.png'
 import { NavLink } from "react-router-dom";
 export default function DropDown() {
   return (
-    <div className="group-hover:block  lg:w-[1000px]  bg-white justify-between dropdown-menu lg:gap-[10px] xl:gap-[30px]  p-[30px] hidden h-auto ">
+    <div className="group-hover:block   lg:w-[1000px]  bg-white justify-between dropdown-menu lg:gap-[10px] xl:gap-[30px]  p-[30px] hidden h-auto ">
       <div className="flex w-[100%] gap-[40px] justify-between">
         <div className="flex w-[25%] flex-col gap-[30px]">
           <div className="flex flex-col gap-[10px]">
