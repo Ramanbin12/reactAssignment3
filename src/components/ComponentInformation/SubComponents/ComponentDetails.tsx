@@ -5,6 +5,8 @@ import { DevTool } from '@hookform/devtools'
 import { yupResolver } from "@hookform/resolvers/yup"
 import India from "../India.png"
  import {Countries} from "../../../utilities/Countries"
+ import { useAppDispatch } from '../../../hooks'
+import { addData } from '../../../slices/FormSlice'
 type formType = {
     email: string,
     firstname: string,
@@ -38,8 +40,11 @@ const ComponentDetails = () => {
         },
         resolver: yupResolver(schema)
     })
+    const dispatch=useAppDispatch()
+
     const submit=(data:formType)=>{
         console.log("data",data)
+        dispatch(addData(data))
     }
     const { errors } = formState;
     return (

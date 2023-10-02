@@ -64,7 +64,7 @@ const CartComponent = () => {
               <div className='text-black w-full flex justify-between bg-white'><p>Total</p>
                 <p className='font-semibold font-lato'>${total}</p></div>
               <div className='flex text-black w-full bg-white justify-evenly'>
-                <button className=' w-[100px] py-3 rounded-md  bg-[#4172DC] text-white' onClick={()=>navigate("/checkout")}>View Bag</button>
+                <button className=' w-[100px] py-3 rounded-md  bg-[#4172DC] text-white' onClick={()=>navigate("/form")}>View Bag</button>
                 <button className='w-[100px] py-rounded-md  border-2'>Checkout</button>
 
               </div>

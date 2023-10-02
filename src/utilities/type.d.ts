@@ -80,3 +80,19 @@ export type otherProductsType={
         discount:string,
         image:dress1
 }
+
+export type paymentType={
+        id:number,
+        name:string,
+        desc:string,
+        image:string,
+        // checked:boolean
+}
+export type shippingType={
+    id:number,
+    name:string,
+    Delivery_time:string,
+    shipping_cost:string,
+    Insurance:string,
+    image:string,
+}

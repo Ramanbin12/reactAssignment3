@@ -18,9 +18,9 @@ return total
   
   return (
     
-    <div className=' w-full  lg:w-1/3 '> 
+    <div className=' w-full mt-12  lg:w-1/3 '> 
       <div className='flex flex-col md:items-center'>
-        <div className='flex flex-col gap-6 h-auto  bg-[#E9E9E9]  p-20'>
+        <div className='flex flex-col gap-6 h-auto rounded-md bg-[#E9E9E9]  p-20'>
           <p className='font-lato text-xl font-semibold'>Order Summary</p>
           <div className='flex w-full justify-between flex-col gap-4'>
           <div className='text-[#555555] text-lg list-none flex justify-between '>

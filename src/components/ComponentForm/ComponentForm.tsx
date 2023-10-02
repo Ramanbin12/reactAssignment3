@@ -7,6 +7,7 @@ import CardComponent from "../CheckoutComponent/SubComponents/CardComponent"
 import OrderSummary from '../CheckoutComponent/SubComponents/OrderSummary';
 import ComponentDetails from '../ComponentInformation/SubComponents/ComponentDetails';
 import { OtherProductsComponent } from '../DetailedBrandComponent/SubComponents';
+import {ConfirmationComponent, PaymentComponent} from "../index"
 const ComponentForm = () => {
     const [value, setValue] = React.useState('1');
 
@@ -30,8 +31,8 @@ const ComponentForm = () => {
             <div className=' w-full lg:w-2/3  lg:p-5 '>
           <TabPanel  value="1"><CardComponent/></TabPanel>
         <TabPanel value="2"><ComponentDetails/></TabPanel>
-        <TabPanel value="3">Item Three</TabPanel>
-        <TabPanel value="4">Item four</TabPanel>
+        <TabPanel value="3"><PaymentComponent/> </TabPanel>
+        <TabPanel value="4"><ConfirmationComponent/></TabPanel>
         </div>
       {/* <CardComponent/> */}
       <OrderSummary/>

@@ -11,3 +11,5 @@ export {default as DetailedBrandCoponent} from './DetailedBrandComponent/Detaile
 export {default as CheckoutComponent} from "./CheckoutComponent/CheckoutComponent"
 export {default as ProductComponent} from "./ProductComponent/ProductComponent"
 export {default as ComponentInformation} from "./ComponentInformation/ComponentInformation"
+export {default as PaymentComponent} from "./PaymentComponent/PaymentComponent"
+export {default as ConfirmationComponent} from "./ConfirmationComponent/ConfirmationComponent"
