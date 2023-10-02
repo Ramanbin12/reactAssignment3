@@ -46,7 +46,7 @@ const Cards = ({id,image,title,desc,updatedprice,price,discount,fav}:clothesType
             <p className='text-red-400'>-{discount}%</p>
             </div>
             <div className='flex items-center'>
-            <ShoppingCartIcon onClick={()=>dispatch(addToCart(id))} />
+            {/* <ShoppingCartIcon onClick={()=>dispatch(addToCart(id))} /> */}
             </div>
             
             </div>

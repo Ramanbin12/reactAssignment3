@@ -1,13 +1,15 @@
 import React from 'react'
 import { useAppDispatch, useAppSelector } from '../../../hooks'
-import { ProductdetailType } from '../../../utilities/type'
+import { ProductdetailType, clothesType } from '../../../utilities/type'
 import { Card1 } from '../assests'
 import { removeFromCart } from "../../../slices/ClothesSlice"
 import { ToggleButton } from '@mui/material'
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
 import { useNavigate } from 'react-router-dom'
 const CartComponent = () => {
-  const cart = useAppSelector((state) => state.clothes.cart)
+  // const cart = useAppSelector((state) => state.clothes.cart)
+  const cartitem = useAppSelector((state) => state.clothes.dress)
+  const cart=cartitem.filter((item:clothesType)=>item.addToCart===true)
   let total = 0;
   const dispatch = useAppDispatch()
   const navigate=useNavigate()

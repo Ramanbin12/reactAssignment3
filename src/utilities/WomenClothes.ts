@@ -12,8 +12,7 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
-
-
+       addToCart:false
     },
     {
         id:2,
@@ -27,6 +26,7 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+        addToCart:false
 
     },
     {
@@ -41,6 +41,7 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+        addToCart:false
 
     },
     {
@@ -55,6 +56,7 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+        addToCart:false
 
     },
     {
@@ -69,6 +71,8 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+        addToCart:false
+
     },
     {
         id:6,
@@ -82,6 +86,8 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+        addToCart:false
+
 
     },
     {
@@ -96,6 +102,8 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+        addToCart:false
+
 
     },
     {
@@ -110,6 +118,8 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+        addToCart:false
+
 
     },
     {
@@ -124,6 +134,8 @@ export const WomenClothes=[
         quantity:1,
         size:["XS","S","M","L","XL"],
         color:["#750430","#00A95D","#A2D2FC","#FF7A00"],
+        addToCart:false
+
 
     },
     

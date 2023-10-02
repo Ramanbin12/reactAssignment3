@@ -7,7 +7,10 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import { useAppDispatch,useAppSelector } from '../../../hooks';
 import { clothesType } from '../../../utilities/type';
 const OrderSummary = () => {
-  const cart= useAppSelector((state)=>state.clothes.cart)
+  // const cart= useAppSelector((state)=>state.clothes.cart)
+  const cartitem= useAppSelector((state)=>state.clothes.dress)
+  const cart=cartitem.filter((item:clothesType)=>item.addToCart===true)
+
   let ppi=1;
   let total=0;
   cart.map((item:clothesType)=>{

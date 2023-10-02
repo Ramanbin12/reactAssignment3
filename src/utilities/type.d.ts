@@ -60,6 +60,8 @@ export type clothesType = {
     quantity:number,
     size?:string[],
         color?:string[],
+        addToCart?:boolean
+
 
 }
 export interface ProductdetailType {

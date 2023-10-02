@@ -65,9 +65,9 @@ const CardComponent:React.FC<CardType> = ({id,title,price,size,color,quantity}) 
     <div className='flex gap-5 sm:gap-10 md:gap-16'>
         <p>Quantity</p>
         <div className='flex border-2 gap-2'>
-            <button className=' p-1'  ><RemoveIcon /></button>
-            <p className='place-self-center'>1</p>
-            <button className=' p-1' ><AddIcon /></button>
+            <button className=' p-1'  onClick={()=>dispatch(decrement(id))}><RemoveIcon /></button>
+            <p className='place-self-center'>{quantity}</p>
+            <button className=' p-1' onClick={()=>dispatch(increment(id))} ><AddIcon /></button>
 
         </div>
     </div>
@@ -78,8 +78,7 @@ const CardComponent:React.FC<CardType> = ({id,title,price,size,color,quantity}) 
     </div>
     <div className='flex gap-2'>
 
-        <button className='px-[32px]  w-[45%] py-[16px]  border-md text-white bg-[#4172DC]  flex justify-center items-center whitespace-nowrap ' 
-        >SHOP NOW</button>
+        <button className='px-[32px]  w-[45%] py-[16px]  border-md text-white bg-[#4172DC]  flex justify-center items-center whitespace-nowrap '>SHOP NOW</button>
         <div className='flex px-[32px] w-[45%] py-[16px] gap-3 justify-center  items-center border-2 ' >
             <img src={cart} alt="" />
             <p className='whitespace-nowrap' onClick={()=>dispatch(addToCart(id))}>ADD TO BASKET</p>

@@ -9,7 +9,8 @@ const ConfirmationComponent = () => {
     const paymentMode=useAppSelector((state)=>state.form.paymentmethods)
 
     const shippingBrand=useAppSelector((state)=>state.form.shippingmethods)
-    const cart = useAppSelector((state) => state.clothes.cart)
+    const cartitems = useAppSelector((state) => state.clothes.dress)
+    const cart=cartitems.filter((item:clothesType)=>item.addToCart===true)
   return (
     <div className='w-full space-y-5'>
       <p className='text-xl font-lato font-semibold'>Confirmation</p>
