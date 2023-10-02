@@ -3,9 +3,9 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import CardComponent from "../CheckoutComponent/SubComponents/CardComponent"
-import OrderSummary from '../CheckoutComponent/SubComponents/OrderSummary';
-import ComponentDetails from '../ComponentInformation/SubComponents/ComponentDetails';
+import CardComponent from "../CheckoutComponent/CardComponent"
+import OrderSummary from '../CheckoutComponent/OrderSummary';
+import ComponentDetails from '../ComponentInformation/ComponentDetails';
 import { OtherProductsComponent } from '../DetailedBrandComponent/SubComponents';
 import {ConfirmationComponent, PaymentComponent} from "../index"
 const ComponentForm = () => {

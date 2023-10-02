@@ -4,9 +4,9 @@ import * as yup from "yup"
 import { DevTool } from '@hookform/devtools'
 import { yupResolver } from "@hookform/resolvers/yup"
 import India from "../India.png"
- import {Countries} from "../../../utilities/Countries"
- import { useAppDispatch } from '../../../hooks'
-import { addData } from '../../../slices/FormSlice'
+ import {Countries} from "../../utilities/Countries"
+ import { useAppDispatch } from '../../hooks'
+import { addData } from '../../slices/FormSlice'
 type formType = {
     email: string,
     firstname: string,

@@ -1,18 +1,25 @@
 import React from 'react'
-import { useAppDispatch, useAppSelector } from '../../../hooks'
-import { increment, decrement, removeFromCart } from '../../../slices/ClothesSlice';
+import { useAppDispatch, useAppSelector } from '../../hooks'
+import { increment, decrement, removeFromCart, addToCart } from '../../slices/ClothesSlice';
 import DeleteIcon from '@mui/icons-material/Delete';
 import RemoveIcon from '@mui/icons-material/Remove';
-import { clothesType } from "../../../utilities/type"
+import { clothesType } from "../../utilities/type"
 import AddIcon from '@mui/icons-material/Add';
+import emptycart from "./emptycart.png"
+import { useNavigate } from 'react-router-dom';
 const CardComponent = () => {
     // const cart = useAppSelector((state) => state.clothes.cart)
     const cartitems=useAppSelector((state)=>state.clothes.dress)
     const dispatch = useAppDispatch()
+    const navigate=useNavigate()
     const cart=cartitems.filter((item:clothesType)=>item.addToCart===true)
     return (
         <div className='w-full  lg:p-5'>
             {
+            cart.length===0?<div className='border-2 flex flex-col items-center justify-center'>
+                <img src={emptycart} alt="" className='w-[500px]' />
+                <button className='border-2 p-4 rounded-md bg-blue-400 'onClick={()=>navigate('/women/clothes')}>continue shopping</button>
+                </div>:
                 cart.map((item: clothesType) => {
                 
                     return (
@@ -33,7 +40,7 @@ const CardComponent = () => {
 
                                     </div>
                                     <p>${item.price*item.quantity}</p>
-                                    <DeleteIcon onClick={()=>dispatch(removeFromCart(item.id))} />
+                                    <DeleteIcon onClick={()=>dispatch(addToCart(item.id))} />
                             </div>
 
                         </div>

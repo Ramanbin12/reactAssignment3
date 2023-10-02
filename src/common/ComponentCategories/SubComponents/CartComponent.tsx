@@ -2,7 +2,7 @@ import React from 'react'
 import { useAppDispatch, useAppSelector } from '../../../hooks'
 import { ProductdetailType, clothesType } from '../../../utilities/type'
 import { Card1 } from '../assests'
-import { removeFromCart } from "../../../slices/ClothesSlice"
+import { addToCart, removeFromCart } from "../../../slices/ClothesSlice"
 import { ToggleButton } from '@mui/material'
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
 import { useNavigate } from 'react-router-dom'
@@ -48,7 +48,7 @@ const CartComponent = () => {
                           </div >
                         </div>
                         <div className='flex text-black'>
-                          <RemoveShoppingCartIcon onClick={() => dispatch(removeFromCart(item.id))} />
+                          <RemoveShoppingCartIcon onClick={() => dispatch(addToCart(item.id))} />
                         </div>
                       </div>
                     </li>
@@ -59,7 +59,7 @@ const CartComponent = () => {
               }
 
               {cart.map((i: ProductdetailType) => {
-                total = i.price + total
+                total = (i.price*i.quantity) + total
                 return total
               })
               }

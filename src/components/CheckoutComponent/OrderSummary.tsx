@@ -4,8 +4,8 @@ import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import { useAppDispatch,useAppSelector } from '../../../hooks';
-import { clothesType } from '../../../utilities/type';
+import { useAppDispatch,useAppSelector } from '../../hooks';
+import { clothesType } from '../../utilities/type';
 const OrderSummary = () => {
   // const cart= useAppSelector((state)=>state.clothes.cart)
   const cartitem= useAppSelector((state)=>state.clothes.dress)

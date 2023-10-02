@@ -41,10 +41,10 @@ if (state.dress[cartindex]) {
 // state.dress[cartindex].addToCart=!state.dress[cartindex].addToCart
 },
 removeFromCart:(state,action)=>{
-    const index=state.cart.findIndex((e)=>e.id===action.payload)
-    console.log("index",index)
-    console.log("remove")
-    state.cart.splice(index,1)
+    // const index=state.cart.findIndex((e)=>e.id===action.payload)
+    // console.log("index",index)
+    // console.log("remove")
+    // state.cart.splice(index,1)
   
 },
 increment:(state,action)=>{

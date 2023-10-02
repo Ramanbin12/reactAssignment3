@@ -8,8 +8,6 @@ export {default as ComponentBanner} from "./HomePageComponents/ComponentBanner/C
 export {default as ComponentBigTrends} from "./HomePageComponents/ComponentBigTrends/ComponentBigTrends"
 export {default as ComponentBigSecTrends} from "./HomePageComponents/ComponentBigTrends/ComponentBigSecTrends"
 export {default as DetailedBrandCoponent} from './DetailedBrandComponent/DetailedBrandComponent'
-export {default as CheckoutComponent} from "./CheckoutComponent/CheckoutComponent"
 export {default as ProductComponent} from "./ProductComponent/ProductComponent"
-export {default as ComponentInformation} from "./ComponentInformation/ComponentInformation"
 export {default as PaymentComponent} from "./PaymentComponent/PaymentComponent"
 export {default as ConfirmationComponent} from "./ConfirmationComponent/ConfirmationComponent"
