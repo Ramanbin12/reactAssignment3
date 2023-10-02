@@ -5,6 +5,7 @@ import DetailedBrandComponent from '../components/DetailedBrandComponent/Detaile
 import ProductDetailPage from '../pages/ProductDetailPage/ProductDetailPage'
 import ProductPage from '../pages/ProductPage/ProductPage'
 import {FormPage} from "../pages"
+import SignInPage from '../pages/SignInPage/SignInPage'
 const routes = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const routes = () => {
         <Route path='/women/clothes/:id' element={<ProductPage />} />
         <Route path="/electronics" element={<ElectronicPage />} />
         <Route path="/form" element={<FormPage />} />
+        <Route path="/signin" element={<SignInPage />} />
 
       </Routes>
     </div>
