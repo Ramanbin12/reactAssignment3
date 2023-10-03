@@ -79,9 +79,9 @@ const CardComponent:React.FC<CardType> = ({id,title,price,size,color,quantity}) 
     <div className='flex gap-2'>
 
         <button className='px-[32px]  w-[45%] py-[16px]  border-md text-white bg-[#4172DC]  flex justify-center items-center whitespace-nowrap '>SHOP NOW</button>
-        <div className='flex px-[32px] w-[45%] py-[16px] gap-3 justify-center  items-center border-2 ' >
+        <div className='flex px-[32px] w-[45%] py-[16px] gap-3 justify-center  items-center border-2 ' onClick={()=>dispatch(addToCart(id))}>
             <img src={cart} alt="" />
-            <p className='whitespace-nowrap' onClick={()=>dispatch(addToCart(id))}>ADD TO BASKET</p>
+            <p className='whitespace-nowrap' >ADD TO BASKET</p>
         </div>
 
     </div>
