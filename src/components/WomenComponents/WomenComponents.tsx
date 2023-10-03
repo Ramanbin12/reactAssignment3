@@ -10,7 +10,7 @@ const WomenComponents = () => {
       <Header/>
       <FilterComponent/>
 
-      <div className='flex'>
+      <div className='flex w-full'>
         <SideDrawerComponent/>
 
       <ContentComponent/>
