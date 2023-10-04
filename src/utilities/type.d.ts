@@ -60,7 +60,13 @@ export type clothesType = {
     quantity:number,
     size?:string[],
         color?:string[],
-        addToCart?:boolean
+        addToCart?:boolean,
+        img0?:string,
+        img1?:string,
+        img2?:string,
+        img3?:string,
+        img4?:string,
+        img5?:string
 
 
 }

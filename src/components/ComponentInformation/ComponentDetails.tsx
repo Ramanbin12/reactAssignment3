@@ -14,7 +14,7 @@ type formType = {
     country: string,
     state: string,
     address: string,
-    phoneNumber: string
+    phoneNumber: number
 }
 const ComponentDetails = () => {
 
@@ -25,7 +25,7 @@ const ComponentDetails = () => {
         country: yup.string().required("country is required"),
         state: yup.string().required("state is required"),
         address: yup.string().required("address is required"),
-        phoneNumber: yup.string().required("phone Number is required")
+        phoneNumber: yup.number().min(10).required("phone Number is required")
 
     })
     const { register, handleSubmit, formState, control } = useForm<formType>({
@@ -36,7 +36,7 @@ const ComponentDetails = () => {
             country: "India",
             state: "Delhi",
             address: "",
-            phoneNumber: ""
+            phoneNumber: 1
         },
         resolver: yupResolver(schema)
     })
@@ -82,7 +82,6 @@ return(
                             })
                             }
                         </select>
-                        <p>{errors.phoneNumber?.message}</p>
 
                     </div>
                     <div className='flex flex-col'>

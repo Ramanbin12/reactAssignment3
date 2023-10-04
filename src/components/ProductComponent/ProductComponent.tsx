@@ -1,5 +1,6 @@
 import React from 'react'
 import ImageComponent from './SubComponents/ImageComponent'
+import ImgComponent from "./SubComponents/ImgComponent"
 import CardComponent from './SubComponents/CardComponent'
 import { useParams } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../../hooks'
@@ -20,7 +21,9 @@ const ProductComponent = () => {
   return (
     <div className='md:mx-20  space-y-5 mt-10' >
       <div className='flex flex-wrap md:flex-nowrap'>
-        <ImageComponent Image={dress1.image} />
+        {/* <ImageComponent Image={dress1.img0} img1={dress1.img1} img2={dress1.img2} img3={dress1.img3} img4={dress1.img4} img5={dress1.img5} /> */}
+        <ImgComponent Image={dress1.img0!} img1={dress1.img1!} img2={dress1.img2!} img3={dress1.img3!} img4={dress1.img4!} img5={dress1.img5!} />
+
         <CardComponent id={dress1.id} title={dress1.title} price={dress1.updatedprice } size={dress1.size} color={dress1.color} quantity={dress1.quantity}  />
       </div>
       <MoreDetailsComponent/>
